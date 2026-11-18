@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 ========================================================================
   OBLIVION ORBITAL — Unified Knowledge-Graph, Code-Intelligence &
