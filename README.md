@@ -1,6 +1,7 @@
 # Oblivions-Orbital-5.3-
 1. What does this software actually do?
-2. 
+2. <img width="1923" height="817" alt="file_000000006b148243a1f387ca609fae5e" src="https://github.com/user-attachments/assets/b011413b-77ab-4787-a969-275d046161a5" />
+
 Orbital takes in data, organizes it, identifies connections within it, performs analysis, and presents the results in an understandable format. For example, imagine you have a file containing information about a thousand cities around the world. Orbital can: Read the data from the file. Import the data into a database. Store the cities as distinct entities. Identify relationships between the data. Search through the data. Visualize these connections as a graph (diagram). Use local artificial intelligence to answer questions about the data. Now, let’s take a look at three of its components.
 # OBLIVION ORBITAL 5.3
 Bardiya Shokri / Oblivion
@@ -15,6 +16,7 @@ The application is designed to run as a local web interface while keeping its pr
 > **Runtime:** Python 3.10+  
 > **Main entry point:** `orbital5.3.py`  
 > **Default interface:** `http://127.0.0.1:8080`
+<img width="1672" height="941" alt="file_00000000b3b48212b07bc6e4dd54c19b" src="https://github.com/user-attachments/assets/eb3a7d41-5edf-4425-962d-d15f676ffab2" />
 
 ---
 
@@ -31,6 +33,7 @@ Orbital is organized as three integrated workspaces:
 The modules are presented through one integrated application shell and run within the same Orbital process.
 
 ## Core capabilities
+<img width="1708" height="882" alt="Screenshot 2026-11-18 121118" src="https://github.com/user-attachments/assets/e99a0227-fd32-4a8b-876e-e686454cab1b" />
 
 ### Orbital Core
 
@@ -45,6 +48,7 @@ The modules are presented through one integrated application shell and run withi
 - A subprocess-based code execution path with a timeout and platform-dependent resource limits.
 
 ### UMBRA — Data Intelligence
+<img width="1706" height="896" alt="Screenshot 2026-11-18 121007" src="https://github.com/user-attachments/assets/284ee929-0722-4dc7-8f8a-4b53ba908702" />
 
 UMBRA is a local-first data and knowledge-graph subsystem. Its pipeline is designed around:
 
@@ -66,6 +70,8 @@ Implemented capabilities include:
 - Connecting optionally to a local LM Studio OpenAI-compatible endpoint for model-assisted analysis and tool use.
 
 The agent is designed to use registered tools rather than directly modifying the database. Its available tools include object search, object/evidence inspection, graph traversal, path finding, centrality, dataset inspection, statistics and read-only SQL queries.
+![Uploading Screenshot 2026-11-18 120953.png…]()
+
 
 ### Web / GOTHAM
 
@@ -100,6 +106,7 @@ The embedded GOTHAM workspace includes a geospatial atlas for Rasht and its surr
 **Data and connectivity note:** the source code does not ship with a complete Rasht map extract. The vector dataset must be downloaded or imported. The map's background tile layers use external tile services, so the atlas is not fully offline by default. OpenStreetMap community data may be incomplete and should not be treated as a certified municipal inventory.
 
 ---
+<img width="1712" height="850" alt="Screenshot 2026-11-18 120910" src="https://github.com/user-attachments/assets/2f0c859d-18c7-4c9e-9b7e-41dd4712f41b" />
 
 ## Architecture
 
@@ -149,6 +156,7 @@ pip install pyflakes jedi pluggy numpy
 | `numpy` | Numerical operations used by selected UMBRA graph, vector and model functions. |
 
 If optional packages are missing, some features use reduced or fallback implementations. The exact feature availability depends on which optional packages are installed.
+![Uploading Screenshot 2026-11-18 120846.png…]()
 
 ## Getting started
 
